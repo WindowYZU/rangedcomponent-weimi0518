@@ -45,7 +45,12 @@ public class Slider2 {
         frame.add(textField);
         //攔截 ChangeListener
         //並將 slider.getValue() 填入 textField
-        
+        slider.addChangeListener(new ChangeListener() {
+            @Override
+            public void stateChanged(ChangeEvent e) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+        });
         
         ///////////////////////////////////////
         

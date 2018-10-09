@@ -27,11 +27,20 @@ public class Slider1 {
         frame.setLayout(new FlowLayout());
         
         JSlider slider=new JSlider();
+        slider.setMinimum(0);
+        slider.setMaximum(100);
         //set min to 0
         //max to 100
+        slider.setValue(50);
         //value to 5
+        slider.setPaintTicks(true);
+        slider.setPaintTrack(true);
+        slider.setPaintLabels(true);
         //paintTicks to true
         //paintTracks to true
+        slider.setMinorTickSpacing(10);
+        slider.setMinorTickSpacing(20);
+        frame.add(slider);
         //minorTickSpacing to 10
         //majorTickSpacing to 
         //
